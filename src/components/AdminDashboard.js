@@ -49,7 +49,7 @@ const AdminDashboard = () => {
                       setShow(true);
                     }}
                   >
-                    edit
+                    Edit
                   </Button>
                 </td>
               </tr>

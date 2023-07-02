@@ -14,6 +14,9 @@ const Deck = ({ deck = "", seats = [], selectedSeats, setSelectedSeats }) => {
   const rowCSeats = seats
     .filter((seat) => seat.deck === deck)
     .filter((seat) => seat.row === "c");
+  const rowDSeats = seats
+    .filter((seat) => seat.deck === deck)
+    .filter((seat) => seat.row === "d");
 
   return (
     <Container className="content-container">
@@ -68,7 +71,11 @@ const Deck = ({ deck = "", seats = [], selectedSeats, setSelectedSeats }) => {
         </div>
         {/* Vertial Seat */}
         <div className="vertical-seat-container">
-          <VerticalSeat />
+          <VerticalSeat
+            seatDetails={rowDSeats}
+            setSelectedSeats={setSelectedSeats}
+            selectedSeats={selectedSeats}
+          />
         </div>
       </div>
     </Container>

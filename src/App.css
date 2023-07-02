@@ -104,6 +104,8 @@
   height: 100px;
   width: 40px;
   position: relative;
+  background-color: white;
+  cursor: pointer;
 }
 .vertical-seat-inside-container{
   border: 1px solid black;

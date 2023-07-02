@@ -24,7 +24,6 @@ const Seat = ({ seatDetails, selectedSeats, setSelectedSeats }) => {
       })}
       onClick={seatHandler}
     >
-      <div>{seatDetails.id}</div>
       <div className="seat-inside-container"></div>
     </div>
   );
