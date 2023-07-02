@@ -8,7 +8,6 @@ import Deck from "../Deck";
 const Reservation = () => {
   const seats = useSelector(selectSeats);
   const [selectedSeats, setSelectedSeats] = useState([]);
-  console.log("selectedSeats", selectedSeats);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
