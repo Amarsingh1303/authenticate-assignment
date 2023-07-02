@@ -28,6 +28,107 @@
   color: #61dafb;
 }
 
+.content-container{
+  background-color: white;
+  height: 300px;
+  border-left: 8px solid #777777;
+}
+
+.deck-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.vertical-line{
+  border-left: 2px solid #d0d0d0;
+  height: 90%;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.seat-content-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.seat-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.vertical-seat-container{
+  display:flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.content{
+  background-color: #eeeded !important;
+}
+.content-width{
+  width: 800px !important;
+}
+.heading{
+  background-color: #d84e55;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.seat{
+  border: 1px solid black;
+  height: 40px;
+  width: 100px !important;
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+}
+
+.seat-inside-container{
+  height: 20px;
+  width: 10px;
+  border: 1px solid black;
+  position: absolute;
+  right: 4px ;
+  top: 8px ;
+}
+
+.vertical-seat{
+  border: 1px solid black;
+  height: 100px;
+  width: 40px;
+  position: relative;
+}
+.vertical-seat-inside-container{
+  border: 1px solid black;
+  height: 50px;
+  width: 20px;
+  position: absolute;
+  top: 24px;
+  right: 5px;
+}
+.error{
+  color: #d84e55;
+}
+.cursor-not-allowed{
+  cursor: not-allowed;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.booked-seat-bg-color{
+  background-color: #cbcbcb ;
+}
+.selected-seat-bg-color{
+  background-color: #f1a9a0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
